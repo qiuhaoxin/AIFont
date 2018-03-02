@@ -1,0 +1,46 @@
+.infiniteContainer{
+	border:1px solid #e8e8e8;
+	border-radius:4px;
+	overflow:auto;
+	padding:8px 24px;
+	height:300px;
+}
+.dispatch{
+	justify-content:flex-end;
+}
+.modal{
+	width:620px !important;
+}
+.movepopover{
+	cursor:pointer;
+	.notallowed{
+	 cursor:not-allowed;
+	 color:rgba(0,0,0,.3);
+	}
+}
+.desc{
+	color:#1890ff;
+}
+.arrowDown{
+	position:relative;
+	width:0;
+    &:before{
+        content:'';
+        right:-15px;
+        top:8px;
+        position:absolute;
+		border-top:5px solid #1890ff;
+		border-left:5px solid transparent;
+		border-right:5px solid transparent;
+    }
+    &:after{
+       content:'';
+       right:-15px;
+       top:6px;
+       position:absolute;
+       border-top:5px solid #fff;
+	   border-left:5px solid transparent;
+	   border-right:5px solid transparent;
+    }
+
+}
